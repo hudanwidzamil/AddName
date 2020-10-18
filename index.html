@@ -39,7 +39,7 @@
                 redirect: 'follow'
             };
             // make API call with parameters and use promises to get response
-            fetch("https://nameinputjs.azurewebsites.net/api/NameInputFunctionJS?code=bgzJGLJWBQ27il9a6Jzck2zrXm8NHtBJCZEnJWlNjCaY0kCUlIQpsQ==", requestOptions)
+            fetch("https://nameinputjs.azurewebsites.net/api/NameInputFunctionJS?code=bgzJGLJWBQ27il9a6Jzck2zrXm8NHtBJCZEnJWlNjCaY0kCUlIQpsQ==?name=", name)
             .then(response => response.text())
             .then(result => alert(JSON.parse(result).body))
             .catch(error => console.log('error', error));
