@@ -45,7 +45,7 @@
             // make API call with parameters and use promises to get response
             fetch("https://nameinputjs.azurewebsites.net/api/NameInputFunctionJS?code=bgzJGLJWBQ27il9a6Jzck2zrXm8NHtBJCZEnJWlNjCaY0kCUlIQpsQ==", requestOptions)
             .then(response => response.text())
-            .then(result => alert(JSON.parse(result).body))
+            .then(result => alert(result))
             .catch(error => console.log('error', error));
         }
     </script>
