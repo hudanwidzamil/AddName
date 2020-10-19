@@ -38,9 +38,9 @@
             // create a JSON object with parameters for API call and store in a variable
             var requestOptions = {
                 method: 'POST',
-                headers: myHeaders,
+                //headers: myHeaders,
                 body: raw,
-                redirect: 'follow'
+                //redirect: 'follow'
             };
             // make API call with parameters and use promises to get response
             fetch("https://nameinputjs.azurewebsites.net/api/NameInputFunctionJS?code=bgzJGLJWBQ27il9a6Jzck2zrXm8NHtBJCZEnJWlNjCaY0kCUlIQpsQ==", requestOptions)
